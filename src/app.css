@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--atomic-tangerine: hsla(18, 80%, 68%, 1);
+--ecru: hsla(35, 38%, 63%, 1);
+--rich-black: hsla(195, 46%, 5%, 1);
+--mountbatten-pink: hsla(303, 7%, 47%, 1);
+--slate-gray: hsla(212, 20%, 46%, 1);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--rich-black);
+    display: flex;
+    justify-content: center;
+    background-color: var(--ecru);
+}
+
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.playerName h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.resourceContainer{
+    padding: 10px;
+    background-color: var(--mountbatten-pink);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.resourceContainer p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resourceContainer span{
+    font-weight: 600;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: var(--atomic-tangerine);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 900;
+    transition: background-color 0.3s ease;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--ecru);
+}
+
